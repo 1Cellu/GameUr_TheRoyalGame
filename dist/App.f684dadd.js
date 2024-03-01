@@ -16726,6 +16726,10 @@ const TicTacToe = exports.TicTacToe = {
   setup: () => ({
     cells: Array(9).fill(null)
   }),
+  turn: {
+    minMoves: 1,
+    maxMoves: 1
+  },
   moves: {
     clickCell: (_ref, id) => {
       let {
